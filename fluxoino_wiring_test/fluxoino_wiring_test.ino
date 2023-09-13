@@ -9,8 +9,10 @@
 //   - Optimized for Arduino Nano R3 (ATmega328P) and Ethernet module ECN28J60
 //
 //   Source code:
-//   - wiring testing:
-//   - project:
+//   - https://github.com/fortalbrz/fluxoino/
+//   - wiring testing: https://github.com/fortalbrz/fluxoino/blob/main/fluxoino_wiring_test/fluxoino_wiring_test.ino
+//   - project: https://github.com/fortalbrz/fluxoino/blob/main/fluxoino/fluxoino.ino
+//:
 //
 //   Materials:
 //   - Arduino Nano R3 (ATmega328P)

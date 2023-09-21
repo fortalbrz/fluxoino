@@ -1,20 +1,34 @@
-# FLUXOINO 
+# FLUXO.INO 
 
-## Arduino Water Flow Controller Project (protection against water leaks)
+## Arduino Water Flow Watchdog 
+
+*(protection against water leaks)*
 
  - HAL Water Flowmeter Sensor  + Solenoid Flow Valve + Home Assistant (MQTT)
  - Optimized for Arduino Nano R3 (ATmega328P) and Ethernet module ECN28J60
 
 ### Source code:
-  - [github](https://github.com/fortalbrz/fluxoino/)
-  - [wiring testing](https://github.com/fortalbrz/fluxoino/blob/main/fluxoino_wiring_test/fluxoino_wiring_test.ino)
-  - [project](https://github.com/fortalbrz/fluxoino/blob/main/fluxoino/fluxoino.ino)
+  - https://github.com/fortalbrz/fluxoino/
+  - [arduino nano sketch](https://github.com/fortalbrz/fluxoino/blob/main/fluxoino/fluxoino.ino)
+  - [wiring testing sketch](https://github.com/fortalbrz/fluxoino/blob/main/fluxoino_wiring_test/fluxoino_wiring_test.ino)
+  
+
+in order to use serial communication on this sketch (debug with "Serial Monitor") 
+sets the macro "DEBUG_MODE true".
+
+**NOTICE**: that this sketch should be pushed into an Arduino board (Board "*Arduino Nano*") using the 
+ATmega328P (Processor: "*ATmega328P (Old Bootloader)*").
+
+
+#### Drivers (CH340g) for Arduino:
+- [CH340g USB/Serial driver](https://bit.ly/44WdzVF) (windows 11 compatible driver)  
+- driver install instructions ([pt-BR](https://bit.ly/3ZqIqc0))
 
 ###  Materials:
   - Arduino Nano R3 (ATmega328P)
   - Ethernet LAN Network Module (ENC28J60)
   - water flow sensor G 1/2"
-  - solenoid valve 3/4" 12v (normaly opened)
+  - solenoid valve 3/4" 12v (normally opened)
   - power supply 12vdc (2A)
   - 1 x rotary potentiometer 10k Ohm (Linear)
   - 1 x N-channel MOSFET 60V 30A (TNMOSFETFQP)

@@ -7,14 +7,15 @@
  - HAL Water Flowmeter Sensor + Solenoid Flow Valve + Home Assistant (MQTT)
  - Optimized for Arduino Nano R3 (ATmega328P) and Ethernet module ECN28J60
 
-I made this project after have some leakages and be caught by a very expensive water bill :receipt: :money_with_wings:.
-The goal is not only creates a Arduino water flow sensor, but a small robot that can close the water flow autonomously (if required) case detect water leakages.    
+I made this project after have some leakages and being caught by a very expensive water bill! :receipt: :money_with_wings:
+The goal is not only creates a Arduino water flow sensor, but a small "robot" that can close the water flow autonomously (if required) case detect any water leakages (i.e., "leakage watchdog").
+
 
 ### Features:
 
  - home assistant water flow sensor
  - home assistant water flow switch (solenoid water valve) (*optional, see [config flags](https://github.com/fortalbrz/fluxoino/blob/main/README.md#configuration-flags)*)
- - home assistant leakage probability sensor 
+ - home assistant leakage probability sensor (percentage)
  - autonomously closes the water flow case detect water leakages, i.e., "leakage watchdog" (*optional, see [config flags](https://github.com/fortalbrz/fluxoino/blob/main/README.md#configuration-flags)*)
  - displays water flow information on 16 x 2 LCD (*optional, see [config flags](https://github.com/fortalbrz/fluxoino/blob/main/README.md#configuration-flags)*)
 

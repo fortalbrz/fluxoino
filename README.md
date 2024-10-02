@@ -117,6 +117,19 @@ Remark: home assistant can be disabled and therefore fluxoino will only work as 
    - ethernet module ENC28J60 Pin7 (CS) --> Arduino Nano Pin13 (D10)
    - ethernet module ENC28J60 Pin10 (GND) --> Gnd (Arduino Nano Pin29)
 
+# Home Assistant
+
+The solution will be discoverable as MQTT device with:
+
+## MQTT sensors
+
+| Name         | uid                                       | description                   |
+|--------------|-------------------------------------------|-------------------------------|
+| Flow Sensor  | sensor.flow_sensor                        | water flow (L/min)            |
+| Leakage Prob | sensor.leakage_prob_sensor                | leakage detection probability |
+| Flow Switch  | switch.flow_switch                        | water valve switch (on/off)   |
+| Flow Reset   | button.flow_reset                         | reset EWMA flow estimation    |
+
 
 ### Futhermore
 
